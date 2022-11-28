@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Flat Responsive Form using CSS3 &amp; HTML5 </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1">
+      
+      <p class="name">
+        <input type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Cliente" id="name" />
+      </p>
+      
+      <p class="email">
+        <input type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="proeduto" placeholder="Produto" />
+      </p>
+      <p class="email">
+        <input type="text" class="validate[required,custom[text]] feedback-input" id="sabor" placeholder="Sabor" />
+      </p>
+      <p class="email">
+        <input type="number" class="validate[required,custom[number]] feedback-input" id="valor" placeholder="Quantidade" />
+      </p>
+
+      <div class="submit">
+        <input type="submit" class="button-blue" value="Enviar" id="enviar"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+    <div class="submit">
+      <input type="submit" onclick="consulta()" class="button-blue" value="Mostrar" id="mostrar"/>
+      <div class="ease"></div>
+    </div>
+    <p class="text">
+      <textarea n class="validate[required,length[6,300]] feedback-input" class="comment" id="result" placeholder="Relatorio"></textarea>
+    </p>
+  </div>
+<!-- partial -->
+  <script src="./index.js"></script>
+</body>
+</html>
